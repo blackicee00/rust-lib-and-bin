@@ -42,34 +42,38 @@
 <span id="37">37</span>
 <span id="38">38</span>
 <span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
 </pre><pre class="rust"><code>
+
 <span class="kw">use</span> <span class="ident">thelib::test</span>;
 <span class="kw">use</span> <span class="ident">thelib::mod0</span>;
 <span class="kw">use</span> <span class="ident">thelib::mod1</span>;
 <span class="kw">use</span> <span class="ident">thelib::mod2</span>;
 
-<span class="comment">// module referenced from the binary package</span>
+<span class="doccomment">/// module referenced from the binary package</span>
 <span class="kw">mod</span> <span class="ident">bmod</span>;
 
+<span class="doccomment">/// modules for a and b functions,foo and bar, and printing the version of cargo and foo.</span>
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">main</span>() {
   <span class="kw">let</span> <span class="ident">verstr</span> <span class="op">=</span><span class="macro">env!</span>(<span class="string">&quot;CARGO_PKG_VERSION&quot;</span>);
   <span class="macro">println!</span>(<span class="string">&quot;Version {}&quot;</span>, <span class="ident">verstr</span>);
   <span class="macro">println!</span>(<span class="string">&quot;foo: {}&quot;</span>, <span class="ident">foo</span>());
   <span class="ident">test</span>();
+ 
 
   <span class="ident">mod0::bfunc</span>();
   <span class="ident">mod1::afunc</span>();
   <span class="ident">mod2::foofoo</span>();
-  <span class="comment">// mod2::bar::bar(); // error: module bar is private</span>
   <span class="ident">mod2::barr</span>();
 
   <span class="ident">bmod::bmod_func</span>();
 }
-
+<span class="doccomment">/// this function returns 1</span>
 <span class="kw">fn</span> <span class="ident">foo</span>() -&gt; <span class="ident">usize</span> {
     <span class="kw">return</span> <span class="number">1</span>;
 }
-
+<span class="doccomment">/// running tests</span>
 <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">test</span>)]</span>
 <span class="kw">mod</span> <span class="ident">tests</span> {
     <span class="kw">use</span> <span class="kw">super</span>::<span class="kw-2">*</span>;

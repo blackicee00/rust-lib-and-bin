@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["test",""]],"mod":[["mod0",""],["mod1",""],["mod2",""]]});
+initSidebarItems({"fn":[["test","public test function"]],"mod":[["mod0","public modules from 0 to 2"],["mod1",""],["mod2",""]]});

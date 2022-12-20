@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["barr",""],["foofoo",""]]});
+initSidebarItems({"fn":[["barr",""],["foofoo","and this is just a public function for foofoo to become afoo"]]});

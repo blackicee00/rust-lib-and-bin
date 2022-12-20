@@ -19,16 +19,18 @@
 <span id="14">14</span>
 <span id="15">15</span>
 <span id="16">16</span>
-</pre><pre class="rust"><code>
+<span id="17">17</span>
+</pre><pre class="rust"><code><span class="doccomment">/// public test function</span>
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">test</span>() {
   <span class="macro">println!</span>(<span class="string">&quot;Test&quot;</span>);
 }
-
+<span class="doccomment">///public modules from 0 to 2</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">mod0</span>;
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">mod1</span>;
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">mod2</span>;
 <span class="comment">//pub use mod2::bar;</span>
 
+<span class="doccomment">///testing the modules</span>
 <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">test</span>)]</span>
 <span class="kw">mod</span> <span class="ident">tests</span> {
     <span class="attribute">#[<span class="ident">test</span>]</span>

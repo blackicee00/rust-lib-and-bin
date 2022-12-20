@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["bfunc",""]]});
+initSidebarItems({"fn":[["bfunc","public function called “bfunc” that also prints bfunc"]]});

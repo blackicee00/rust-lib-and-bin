@@ -16,16 +16,16 @@
 <span id="11">11</span>
 <span id="12">12</span>
 <span id="13">13</span>
-</pre><pre class="rust"><code>
+</pre><pre class="rust"><code><span class="doccomment">///modules for a bar and foo</span>
 <span class="comment">// reference privately</span>
 <span class="kw">mod</span> <span class="ident">bar</span>;
 
 <span class="kw">mod</span> <span class="ident">foo</span>;
 
-<span class="comment">// </span>
+<span class="doccomment">/// this is using bar::bar to be changed to barr instead.</span>
 <span class="kw">pub</span> <span class="kw">use</span> <span class="ident">bar::bar</span> <span class="kw">as</span> <span class="ident">barr</span>;
 
-
+<span class="doccomment">/// and this is just a public function for foofoo to become afoo</span>
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">foofoo</span>() {
 	<span class="ident">foo::afoo</span>();
 }

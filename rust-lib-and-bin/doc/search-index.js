@@ -1,5 +1,5 @@
 var searchIndex = JSON.parse('{\
-"mfbin":{"doc":"","t":[0,5,5,5],"n":["bmod","foo","main","bmod_func"],"q":["mfbin","","","mfbin::bmod"],"d":["","","",""],"i":[0,0,0,0],"f":[null,[[],["usize",0]],[[]],[[]]],"p":[]},\
-"thelib":{"doc":"","t":[0,0,0,5,5,5,5,5],"n":["mod0","mod1","mod2","test","bfunc","afunc","barr","foofoo"],"q":["thelib","","","","thelib::mod0","thelib::mod1","thelib::mod2",""],"d":["","","","","","","",""],"i":[0,0,0,0,0,0,0,0],"f":[null,null,null,[[]],[[]],[[]],[[]],[[]]],"p":[]}\
+"mfbin":{"doc":"","t":[0,5,5,5],"n":["bmod","foo","main","bmod_func"],"q":["mfbin","","","mfbin::bmod"],"d":["module referenced from the binary package","this function returns 1","modules for a and b functions,foo and bar, and printing …","a public function named “bmod_func” that prints …"],"i":[0,0,0,0],"f":[null,[[],["usize",0]],[[]],[[]]],"p":[]},\
+"thelib":{"doc":"","t":[0,0,0,5,5,5,5,5],"n":["mod0","mod1","mod2","test","bfunc","afunc","barr","foofoo"],"q":["thelib","","","","thelib::mod0","thelib::mod1","thelib::mod2",""],"d":["public modules from 0 to 2","","","public test function","public function called “bfunc” that also prints bfunc","a public function of afunc as well as printing.","","and this is just a public function for foofoo to become …"],"i":[0,0,0,0,0,0,0,0],"f":[null,null,null,[[]],[[]],[[]],[[]],[[]]],"p":[]}\
 }');
 if (window.initSearch) {window.initSearch(searchIndex)};

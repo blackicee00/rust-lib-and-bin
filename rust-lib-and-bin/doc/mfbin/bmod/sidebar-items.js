@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["bmod_func",""]]});
+initSidebarItems({"fn":[["bmod_func","a public function named “bmod_func” that prints bmod_func"]]});

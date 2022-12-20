@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["foo",""],["main",""]],"mod":[["bmod",""]]});
+initSidebarItems({"fn":[["foo","this function returns 1"],["main","modules for a and b functions,foo and bar, and printing the version of cargo and foo."]],"mod":[["bmod","module referenced from the binary package"]]});

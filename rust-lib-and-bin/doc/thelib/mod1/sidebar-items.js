@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["afunc",""]]});
+initSidebarItems({"fn":[["afunc","a public function of afunc as well as printing."]]});
